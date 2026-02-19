@@ -21,6 +21,7 @@ void display (student s1,student s2)
     s1.year = 2020;
     s2.year = 2021;
 }
+//xyz
 int main()
 {
     student s1,s2;
