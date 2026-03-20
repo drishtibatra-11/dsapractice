@@ -51,7 +51,9 @@ int main()
     int data;
     start=createlist(start,data);
     struct node*temp=start;
+
     while(temp!=NULL)
+    
     {
         printf("%d-> ",temp->info);
         temp=temp->link;

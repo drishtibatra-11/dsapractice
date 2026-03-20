@@ -40,8 +40,9 @@ last->next=newnode;
 last=newnode;
     }
 }
+  
 void displaylist()
-{
+{ 
     struct node*temp;
     if(head==NULL)
     {
