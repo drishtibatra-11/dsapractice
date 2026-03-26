@@ -62,4 +62,4 @@ void pop()
         TOP--;
         printf("Popped element: %d\n", element);
     }
-}
+//.
