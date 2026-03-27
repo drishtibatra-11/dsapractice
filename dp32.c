@@ -10,7 +10,7 @@ void reverse();
 
 struct Node* top = NULL;
 int main() {
-    char x;
+    char x; 
     int n;
     printf("Enter the number of elements to push: ");
     scanf("%d", &n);
@@ -45,14 +45,14 @@ void reverse() {
 void display()
 {
     if (top == NULL) {
-        printf("Stack is empty\n");
+        printf("Stack is empty");
         return;
     }
 
-    printf("Stack elements are:\n");
+    printf("Stack elements are:");
     struct Node* temp = top;
-    while (temp != NULL) {
-        printf("%c\n", temp->data);
+    while (temp != NULL) {d
+        printf("%c", temp->data);
         temp = temp->next;
     }
 }
