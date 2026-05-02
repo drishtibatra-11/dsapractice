@@ -1,4 +1,5 @@
 #include <stdio.h>
+<<<<<<< HEAD
 #include <stdlib.h>
 
 #define MAX 100
@@ -44,6 +45,41 @@ int main() {
     dfs(1, -1);
 
     printf("%d\n", leafCount);
+=======
+
+int graph[10][10], visited[10], n;
+
+void DFS(int v) {
+    printf("%d ", v);
+    visited[v] = 1;
+
+    for(int i = 0; i < n; i++) {
+        if(graph[v][i] == 1 && visited[i] == 0) {
+            DFS(i);
+        }
+    }
+}
+
+int main() {
+    int edges, u, v;
+
+    printf("Enter number of vertices: ");
+    scanf("%d", &n);
+
+    printf("Enter number of edges: ");
+    scanf("%d", &edges);
+
+    for(int i = 0; i < edges; i++) {
+        printf("Enter edge (u v): ");
+        scanf("%d %d", &u, &v);
+
+        graph[u][v] = 1;
+        graph[v][u] = 1; // for undirected graph
+    }
+
+    printf("DFS Traversal: ");
+    DFS(0);
+>>>>>>> c77cd67e11f91d86e202cfa3aa421eaf0a119b1f
 
     return 0;
 }
